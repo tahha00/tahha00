@@ -1,6 +1,6 @@
 ## 👋&nbsp;Hello, I'm Tahha
 
-A Civil and environmental engineering graduate with a strong interest in the tech industry, specifically software development, engineering and consulting.
+A Civil and Environmental engineering graduate with a strong interest in the tech industry, specifically software development, engineering and consulting.
 Passionate about web development and committed to continuous self-improvement, aiming high to reach my full potential in a dynamic and fulling career.
 
 ## 🛠&nbsp;Tech Stack
