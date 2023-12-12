@@ -27,7 +27,7 @@ Here are a few things I've picked up along my learning journey : <br><br>
 
 ## 🤝🏻&nbsp;Connect with Me
 
-<a href="https://www.linkedin.com/in/tahha-butt-553467240/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=fff&style=for-the-badge"/></a>
+<a href="https://www.linkedin.com/in/tahha" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=fff&style=for-the-badge"/></a>
 <a href="https://github.com/tahha00"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/></a>
 <a href="mailto:tahha2k9@gmail.com"><img src="https://img.shields.io/badge/Gmail-EA4335?logo=gmail&logoColor=fff&style=for-the-badge"/></a>
 
