@@ -1,0 +1,54 @@
+<UserControl x:Class="OI.NMR.Plugins.Research.Core.Views.P90ChartView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:resx="clr-namespace:OI.NMR.Plugins.Research.Core.Properties"
+             mc:Ignorable="d"  
+             d:DesignHeight="450" 
+             d:DesignWidth="800"
+             AutomationProperties.AutomationId="P90ChartView"
+             Style="{StaticResource OptimiseInstructionsPanelContentControlStyle}">
+
+    <Grid AutomationProperties.AutomationId="P90ChartViewGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="24"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Header Section -->
+        <Border Grid.Row="0" 
+                AutomationProperties.AutomationId="P90ChartViewHeaderContainer"
+                Background="Transparent">
+            <TextBlock Text="{x:Static resx:Resources.P90PulseWidthHeader}" 
+                       Style="{StaticResource SemiForeground70TextBlockStyle}"
+                       AutomationProperties.AutomationId="P90ChartViewHeader"
+                       AutomationProperties.Name="P90 Pulse Width Header"/>
+        </Border>
+
+        <!-- Spacing Row (Row 1 is just spacing) -->
+
+        <!-- Chart Section -->
+        <Border Grid.Row="2" 
+                AutomationProperties.AutomationId="P90ChartViewChartContainer"
+                Background="Transparent">
+            <ContentControl Content="{Binding Chart.ChartModel}" 
+                            ContentTemplate="{Binding Chart.Template}"
+                            AutomationProperties.AutomationId="P90ChartViewChart"
+                            AutomationProperties.Name="P90 Chart Display"/>
+        </Border>
+
+        <!-- Loading Indicator (if needed) -->
+        <Grid Grid.Row="2" 
+              Visibility="{Binding IsLoading, Converter={StaticResource BooleanToVisibilityConverter}}"
+              AutomationProperties.AutomationId="P90ChartViewLoadingIndicator"
+              Background="Transparent">
+            <TextBlock Text="Loading P90 Chart..." 
+                       HorizontalAlignment="Center" 
+                       VerticalAlignment="Center"
+                       AutomationProperties.AutomationId="P90ChartViewLoadingText"/>
+        </Grid>
+    </Grid>
+
+</UserControl>
